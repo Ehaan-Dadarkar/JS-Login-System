@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1d2a35;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
+    color: black;
+    width: 20vh;
+    height: fit-content;
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #28a745;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+a:hover {
+    background-color: #00ffab;
+    color: #111111;
+}
+
+pre {
+    font-size: 20px;
+}
+
+.basicform {
+    padding: 10px;
+    margin: auto;
+    font-size: 23px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 500px;
+
+
+}
+
+form {
+    margin: auto;
+    position: relative;
+    border: 2px solid white;
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+    align-items: center;
+    width: 500px;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+input {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    padding: 10px;
+    display: block;
+}
+
+#loginbutton {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 90px;
+    width: 100%;
+}
+
+#loginbutton:hover {
+    background-color: darkgreen;
+}
+
+#registerbutton {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 90px;
+    width: 100%;
+}
+
+#registerbutton:hover {
+    background-color: darkgreen;
+}
+
+
+.registerclose {
+    position: absolute;
+    z-index: 1;
+    top: 210px;
+    right: 38%;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.registerclose:hover,
+.registerclose:focus {
+    color: #ff5f5f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.loginclose {
+    position: absolute;
+    z-index: 1;
+    top: 210px;
+    right: 38%;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.loginclose:hover,
+.loginclose:focus {
+    color: #ff5f5f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: #ccc; */
+}
+
+#userlogout {
+    display: none;
+}
+
+#userdisplay {
+    display: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+p {
+    font-size: 25px;
+}
+
+p a {
+    width: auto;
+    color: white;
+    font-size: 20px;
+
+}
+
+p a:hover {
+    background-color: black;
+    color: blue;
+}
+
+
+#contact {
+    display: none;
+}
+
+#deleteuserbutton {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#deluser {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: tomato;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15%;
+    margin-left: 45%;
+}
